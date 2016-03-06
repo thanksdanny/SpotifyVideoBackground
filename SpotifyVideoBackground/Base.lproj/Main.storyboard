@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="9TZ-Dk-lPA">
+                                <rect key="frame" x="78" y="60" width="218" height="66"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nk-nR-aV5">
+                                <rect key="frame" x="27" y="537" width="320" height="45"/>
+                                <color key="backgroundColor" red="0.2028830616" green="0.59079071969999997" blue="0.11908455649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dfM-HI-gez"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp4-X7-Ehu">
+                                <rect key="frame" x="27" y="597" width="320" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="a3v-3c-IZe"/>
+                                </constraints>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.2028830616" green="0.59079071969999997" blue="0.11908455649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Nk-nR-aV5" firstAttribute="leading" secondItem="dp4-X7-Ehu" secondAttribute="leading" id="0PB-50-9kd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dp4-X7-Ehu" secondAttribute="bottom" constant="25" id="KfB-83-uye"/>
+                            <constraint firstItem="dp4-X7-Ehu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lau-FA-pHk"/>
+                            <constraint firstItem="dp4-X7-Ehu" firstAttribute="top" secondItem="2Nk-nR-aV5" secondAttribute="bottom" constant="15" id="WA4-9F-NKd"/>
+                            <constraint firstItem="2Nk-nR-aV5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="ef5-f9-QHs"/>
+                            <constraint firstItem="2Nk-nR-aV5" firstAttribute="trailing" secondItem="dp4-X7-Ehu" secondAttribute="trailing" id="mcs-R7-f5s"/>
+                            <constraint firstItem="9TZ-Dk-lPA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="nSK-ZR-XVX"/>
+                            <constraint firstItem="9TZ-Dk-lPA" firstAttribute="centerX" secondItem="2Nk-nR-aV5" secondAttribute="centerX" id="oj3-iT-Lh8"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="2Nk-nR-aV5" id="5cx-gl-SzA"/>
+                        <outlet property="signUpBtn" destination="dp4-X7-Ehu" id="KMK-OP-a1V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
 </document>

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "STLVideoViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : STLVideoViewController
 
 
 @end

@@ -13,6 +13,10 @@
 		FD0900DA1C8B40A5001A6FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0900D81C8B40A5001A6FF2 /* Main.storyboard */; };
 		FD0900DC1C8B40A5001A6FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0900DB1C8B40A5001A6FF2 /* Assets.xcassets */; };
 		FD0900DF1C8B40A5001A6FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0900DD1C8B40A5001A6FF2 /* LaunchScreen.storyboard */; };
+		FD0900EF1C8C1F76001A6FF2 /* C415F3F13BBD50B1-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD0900EA1C8C1F76001A6FF2 /* C415F3F13BBD50B1-info.plist */; };
+		FD0900F01C8C1F76001A6FF2 /* STLVideoFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0900EC1C8C1F76001A6FF2 /* STLVideoFunctions.m */; };
+		FD0900F11C8C1F76001A6FF2 /* STLVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0900EE1C8C1F76001A6FF2 /* STLVideoViewController.m */; };
+		FD0900F31C8C2002001A6FF2 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FD0900F21C8C1FF3001A6FF2 /* moments.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		FD0900DB1C8B40A5001A6FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0900DE1C8B40A5001A6FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0900E01C8B40A5001A6FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0900EA1C8C1F76001A6FF2 /* C415F3F13BBD50B1-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "C415F3F13BBD50B1-info.plist"; sourceTree = "<group>"; };
+		FD0900EB1C8C1F76001A6FF2 /* STLVideoFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLVideoFunctions.h; sourceTree = "<group>"; };
+		FD0900EC1C8C1F76001A6FF2 /* STLVideoFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLVideoFunctions.m; sourceTree = "<group>"; };
+		FD0900ED1C8C1F76001A6FF2 /* STLVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLVideoViewController.h; sourceTree = "<group>"; };
+		FD0900EE1C8C1F76001A6FF2 /* STLVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLVideoViewController.m; sourceTree = "<group>"; };
+		FD0900F21C8C1FF3001A6FF2 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,13 @@
 		FD0900CE1C8B40A5001A6FF2 /* SpotifyVideoBackground */ = {
 			isa = PBXGroup;
 			children = (
+				FD0900E91C8C1F76001A6FF2 /* STLBGVideo */,
 				FD0900D21C8B40A5001A6FF2 /* AppDelegate.h */,
 				FD0900D31C8B40A5001A6FF2 /* AppDelegate.m */,
 				FD0900D51C8B40A5001A6FF2 /* ViewController.h */,
 				FD0900D61C8B40A5001A6FF2 /* ViewController.m */,
 				FD0900D81C8B40A5001A6FF2 /* Main.storyboard */,
+				FD0900F21C8C1FF3001A6FF2 /* moments.mp4 */,
 				FD0900DB1C8B40A5001A6FF2 /* Assets.xcassets */,
 				FD0900DD1C8B40A5001A6FF2 /* LaunchScreen.storyboard */,
 				FD0900E01C8B40A5001A6FF2 /* Info.plist */,
@@ -77,6 +89,18 @@
 				FD0900D01C8B40A5001A6FF2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD0900E91C8C1F76001A6FF2 /* STLBGVideo */ = {
+			isa = PBXGroup;
+			children = (
+				FD0900EA1C8C1F76001A6FF2 /* C415F3F13BBD50B1-info.plist */,
+				FD0900EB1C8C1F76001A6FF2 /* STLVideoFunctions.h */,
+				FD0900EC1C8C1F76001A6FF2 /* STLVideoFunctions.m */,
+				FD0900ED1C8C1F76001A6FF2 /* STLVideoViewController.h */,
+				FD0900EE1C8C1F76001A6FF2 /* STLVideoViewController.m */,
+			);
+			path = STLBGVideo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0900F31C8C2002001A6FF2 /* moments.mp4 in Resources */,
 				FD0900DF1C8B40A5001A6FF2 /* LaunchScreen.storyboard in Resources */,
 				FD0900DC1C8B40A5001A6FF2 /* Assets.xcassets in Resources */,
+				FD0900EF1C8C1F76001A6FF2 /* C415F3F13BBD50B1-info.plist in Resources */,
 				FD0900DA1C8B40A5001A6FF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +177,8 @@
 			files = (
 				FD0900D71C8B40A5001A6FF2 /* ViewController.m in Sources */,
 				FD0900D41C8B40A5001A6FF2 /* AppDelegate.m in Sources */,
+				FD0900F11C8C1F76001A6FF2 /* STLVideoViewController.m in Sources */,
+				FD0900F01C8C1F76001A6FF2 /* STLVideoFunctions.m in Sources */,
 				FD0900D11C8B40A5001A6FF2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

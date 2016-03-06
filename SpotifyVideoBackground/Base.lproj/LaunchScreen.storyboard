@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="HdD-gi-cE3">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HdD-gi-cE3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3uB-vQ-IF1"/>
+                            <constraint firstItem="HdD-gi-cE3" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="5F1-ga-Ijn"/>
+                            <constraint firstItem="HdD-gi-cE3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5a9-cF-LJp"/>
+                            <constraint firstItem="HdD-gi-cE3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="6uR-lq-mPB"/>
+                            <constraint firstItem="HdD-gi-cE3" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="6yf-8z-lIH"/>
+                            <constraint firstAttribute="trailing" secondItem="HdD-gi-cE3" secondAttribute="trailing" id="9Ph-eK-Aoh"/>
+                            <constraint firstItem="HdD-gi-cE3" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="HIm-py-gg1"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="HdD-gi-cE3" secondAttribute="bottom" id="kWi-bv-EDb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3uB-vQ-IF1"/>
+                                <exclude reference="5F1-ga-Ijn"/>
+                                <exclude reference="kWi-bv-EDb"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +46,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchImage" width="1242" height="2208"/>
+    </resources>
 </document>
